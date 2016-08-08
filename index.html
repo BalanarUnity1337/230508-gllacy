@@ -7,6 +7,8 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+  <!-- Все стили прописаны только для лучшего восприятия
+    ↓ Шапка ↓ -->
     <header class="page-header">
       <div class="container">
         <div class="page-header-logo">
@@ -65,31 +67,59 @@
           <span class="info-time">С 10 до 20, ежедневно</span>
           <span class="info-phone">8 812 450-25-25</span>
         </div>
+        <!-- Слайдер -->
         <div class="slider">
-          <div class="promo">
-            <div class="promo-photo-1">
-              
+          <div class="slider-inner">
+            <div class="slider-slides">
+              <div class="slider-slide-1">
+                <div class="promo-photo-1">
+                  <!-- Картинка первая -->
+                </div>
+                <div class="promo-photo-2">
+                  <!-- Картинка вторая -->
+                </div>
+                <div class="promo-text">
+                  <p>Крем-брюле и пломбир с малиновым джемом</p>
+                </div>
+              </div>
+              <div class="slider-slide-2">
+                <div class="promo-photo-1">
+                  <!-- Картинка первая -->
+                </div>
+                <div class="promo-photo-2">
+                  <!-- Картинка вторая -->
+                </div>
+                <div class="promo-text">
+                  <p>Шоколадный пломбир и лимонный сорбет</p>
+                </div>
+              </div>
+              <div class="slider-slide-3">
+                <div class="promo-photo-1">
+                  <!-- Картинка первая -->
+                </div>
+                <div class="promo-photo-2">
+                  <!-- Картинка вторая -->
+                </div>
+                <div class="promo-text">
+                  <p>Пломбир с помадкой и клубничный щербет</p>
+                </div>
+              </div>
             </div>
-            <div class="promo-photo-2">
-              
-            </div>
-            <div class="promo-text">
-              Крем-брюле и пломбир с малиновым джемом
-            </div>
-          </div>
-          <div class="slider-controls">
-            <input type="radio" name="switch" id="radio-1">
-            <input type="radio" name="switch" id="radio-2">
-            <input type="radio" name="switch" id="radio-3">
-            <label for="radio-1"></label>
-            <label for="radio-2"></label>
-            <label for="radio-3"></label>
-          </div>
-          <a class="button" href="#">Давайте оба!</a>
         </div>
+        <input type="radio" name="switch" id="radio-1">
+        <input type="radio" name="switch" id="radio-2">
+        <input type="radio" name="switch" id="radio-3">
+        <div class="slider-controls">            
+          <label for="radio-1"></label>
+          <label for="radio-2"></label>
+          <label for="radio-3"></label>
+        </div>
+        <a class="button" href="#">Давайте оба!</a> <!-- Кнопка везде одинаковая -->
       </div>
     </header>
+    <!-- Основное содержание -->
     <main class="container">
+      <!-- Баннеры с акциями -->
       <div class="banners">
         <div class="banners-left">
           <h2>Малинка даром!</h2>
@@ -102,9 +132,10 @@
           <a class="button" href="#">Хочу шоколадки!</a>
         </div>
       </div>
+      <!-- Блок самых популярных товаров -->
       <div class="popular">
         <div class="popular-item">
-          <span class="hit">Хит</span>
+          <img class="hit" src="http://placehold.it/61x61" alt="Хит" width="61px"; height="61px" style="border-radius: 50%;">
           <span class="cost">310 &#8381;/кг</span>
           <figure class="popular-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
@@ -112,7 +143,7 @@
           <a class="popular-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </div>
         <div class="popular-item">
-          <span class="hit">Хит</span>
+          <img class="hit" src="http://placehold.it/61x61" alt="Хит" width="61px"; height="61px" style="border-radius: 50%;">
           <span class="cost">380 &#8381;/кг</span>
           <figure class="popular-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
@@ -120,7 +151,7 @@
           <a class="popular-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
         </div>
         <div class="popular-item">
-          <span class="hit">Хит</span>
+          <img class="hit" src="http://placehold.it/61x61" alt="Хит" width="61px"; height="61px" style="border-radius: 50%;">
           <span class="cost">355 &#8381;/кг</span>
           <figure class="popular-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
@@ -128,7 +159,7 @@
           <a class="popular-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </div>
         <div class="popular-item">
-          <span class="hit">Хит</span>
+          <img class="hit" src="http://placehold.it/61x61" alt="Хит" width="61px"; height="61px" style="border-radius: 50%;">
           <span class="cost">415 &#8381;/кг</span>
           <figure class="popular-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
@@ -136,6 +167,7 @@
           <a class="popular-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </div>
       </div>
+      <!-- Блок описания и достоинств данного магазина -->
       <div class="dignity">
         <p class="dignity-title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
         <p class="dignity-description">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -143,6 +175,7 @@
         <p class="dignity-description">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         <p class="dignity-description">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </div>
+      <!-- Блок для новостей и подписки -->
       <div class="content">
         <div class="content-left">
           <h2>Новое в нашем блоге</h2>
@@ -158,6 +191,7 @@
           </div>
         </div>
       </div>
+      <!-- Блок для коммуникации с магазином -->
       <div class="location">
         <img src="http://placehold.it/1200x430" alt="" width="1200" height="430">
         <!--<div class="location-pin">
@@ -179,6 +213,7 @@
         </div>
       </div>
     </main>
+    <!-- Подвал -->
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer-social">
