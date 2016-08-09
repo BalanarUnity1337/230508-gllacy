@@ -52,10 +52,24 @@
           <button class="search" type="button"></button>
           <button class="login" type="button">Вход</button>
           <button class="shopping-cart" type="button">2 товара</button>
+          <div class="search-box" style="display: none">
+            <input type="search" name="search" placeholder="Что ищем?">
+          </div>
+          <div class="login-box" style="display: none">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" name="email-login" placeholder="Электронная почта">
+              <input type="password" name="password-login" placeholder="Пароль">
+              <button class="button" type="submit">Войти</button>
+              <div class="forgot">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="page-header-info">
           <span class="info-time">С 10 до 20, ежедневно</span>
-          <span class="info-phone">8 812 450-25-25</span>
+          <a class="info-phone" href="tel:8 812 450-25-25">8 812 450-25-25</a>
         </div>
       </div>
     </header>
@@ -86,36 +100,38 @@
           <div class="filter-fat">
             <p>Жирность:</p>
             <div class="filter-fat-content">
-              <input type="radio" name="filter-fat" value="0" id="radio-1">
-              <label for="radio-1">0%</label>
-              
-              <input type="radio" name="filter-fat" value="less10" id="radio-2" checked>
-              <label for="radio-2">до 10%</label>
-              
-              <input type="radio" name="filter-fat" value="less30" id="radio-3">
-              <label for="radio-3">до 30%</label>
-              
-              <input type="radio" name="filter-fat" value="over30" id="radio-4">
-              <label for="radio-4">выше 30%</label>
+              <label>
+                <input type="radio" name="filter-fat" value="0">0%
+              </label>
+              <label>
+                <input type="radio" name="filter-fat" value="less10" checked>до 10%
+              </label>
+              <label>
+                <input type="radio" name="filter-fat" value="less30">до 30%
+              </label>
+              <label>
+                <input type="radio" name="filter-fat" value="over30">выше 30%
+              </label>
             </div>
           </div>
           <div class="filter-filling">
             <p>Наполнители:</p>
             <div class="filter-filling-content">
-              <input type="checkbox" name="chocolate" id="checkbox-1" checked>
-              <label for="checkbox-1">шоколадные</label>
-              
-              <input type="checkbox" name="sugar-powder" id="checkbox-2" checked>
-              <label for="checkbox-2">сахарные присыпки</label>
-              
-              <input type="checkbox" name="fruits" id="checkbox-3">
-              <label for="checkbox-3">фрукты</label>
-              
-              <input type="checkbox" name="syrups" id="checkbox-4">
-              <label for="checkbox-4">сиропы</label>
-              
-              <input type="checkbox" name="jams" id="checkbox-5">
-              <label for="checkbox-5">джемы</label>
+              <label>
+                <input type="checkbox" name="chocolate" checked>шоколадные
+              </label>
+              <label>
+                <input type="checkbox" name="sugar-powder" checked>сахарные присыпки
+              </label>
+              <label>
+                <input type="checkbox" name="fruits">фрукты
+              </label>
+              <label>
+                <input type="checkbox" name="syrups">сиропы
+              </label>
+              <label>
+                <input type="checkbox" name="jams">джемы
+              </label>
             </div>            
           </div>
           <button class="apply" type="submit">Применить</button>
@@ -130,7 +146,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <p class="catalog-item-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <a class="button" href="#">Быстрый просмотр</a> <!-- Под вопросом -->
         </div>
         
@@ -141,7 +157,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочно-кофейное с кусочками шоколада</p>
+          <p class="catalog-item-description">Сливочно-кофейное с кусочками шоколада</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
@@ -152,7 +168,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <p class="catalog-item-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
@@ -163,7 +179,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочное крем-брюле с карамельной подливкой</p>
+          <p class="catalog-item-description">Сливочное крем-брюле с карамельной подливкой</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
@@ -174,7 +190,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочное с брусничным джемом</p>
+          <p class="catalog-item-description">Сливочное с брусничным джемом</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
@@ -185,7 +201,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочно-черничное с цельными ягодами черники</p>
+          <p class="catalog-item-description">Сливочно-черничное с цельными ягодами черники</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
@@ -196,7 +212,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочно-лимонное с карамельной присыпкой</p>
+          <p class="catalog-item-description">Сливочно-лимонное с карамельной присыпкой</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
@@ -207,7 +223,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочное с шоколадной стружкой</p>
+          <p class="catalog-item-description">Сливочное с шоколадной стружкой</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
@@ -218,7 +234,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочно-ванильное с кусочками шоколада</p>
+          <p class="catalog-item-description">Сливочно-ванильное с кусочками шоколада</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
@@ -229,7 +245,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочноe с ментоловым сиропом</p>
+          <p class="catalog-item-description">Сливочноe с ментоловым сиропом</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
@@ -240,7 +256,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочное с кусочками черного шоколада</p>
+          <p class="catalog-item-description">Сливочное с кусочками черного шоколада</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
@@ -251,7 +267,7 @@
           <figure class="catalog-item-photo">
             <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
-          <p class="catalog-item-description" href="#">Сливочное с мятным сиропом</p>
+          <p class="catalog-item-description">Сливочное с мятным сиропом</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-pagination">
