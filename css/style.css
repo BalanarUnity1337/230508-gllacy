@@ -1,3 +1,40 @@
 body {
   font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #849d8f;
 }
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+/*.shopping-cart-box {
+  background: #f8f7f4;
+  color: #323232;
+}
+
+.shopping-cart-list {
+  border-collapse: collapse;
+}
+
+.product-delete {
+  width: 11px;
+  height: 11px;
+  background: url("../img/icon-delete.svg") no-repeat 50% 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.product-delete:focus,
+.product-delete:active {
+  outline: none;
+}*/

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин «Глэйси»</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -12,7 +12,7 @@
     <header class="page-header">
       <div class="container">
         <div class="page-header-logo">
-          <img src="http://placehold.it/154x64" alt="" width="154" height="64">
+          <img src="img/header-logo.svg" alt="" width="154" height="64">
         </div>
         <nav class="page-header-navigation">
           <ul>
@@ -98,16 +98,17 @@
                 </div>
               </div>
             </div>
+          </div>
+          <input type="radio" name="switch" id="radio-1">
+          <input type="radio" name="switch" id="radio-2">
+          <input type="radio" name="switch" id="radio-3">
+          <div class="slider-controls">            
+            <label for="radio-1"></label>
+            <label for="radio-2"></label>
+            <label for="radio-3"></label>
+          </div>
+          <a class="button" href="#">Давайте оба!</a> <!-- Кнопка везде одинаковая -->
         </div>
-        <input type="radio" name="switch" id="radio-1">
-        <input type="radio" name="switch" id="radio-2">
-        <input type="radio" name="switch" id="radio-3">
-        <div class="slider-controls">            
-          <label for="radio-1"></label>
-          <label for="radio-2"></label>
-          <label for="radio-3"></label>
-        </div>
-        <a class="button" href="#">Давайте оба!</a> <!-- Кнопка везде одинаковая -->
       </div>
     </header>
     <!-- Основное содержание -->
@@ -128,48 +129,48 @@
       <!-- Блок самых популярных товаров -->
       <div class="catalog">
         <div class="catalog-item">
-          <img class="hit" src="http://placehold.it/61x61" alt="Хит" width="61px"; height="61px" style="border-radius: 50%;">
+          <img class="hit" src="img/hit.png" alt="Хит" width="61" height="61" style="border-radius: 50%">
           <div class="cost">
             <span>310 &#8381;</span>/кг
           </div>
           <figure class="catalog-item-photo">
-            <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
+            <img src="img/catalog-item-photo-1.jpg" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
           <p class="catalog-item-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
         <div class="catalog-item">
-          <img class="hit" src="http://placehold.it/61x61" alt="Хит" width="61px"; height="61px" style="border-radius: 50%;">
+          <img class="hit" src="img/hit.png" alt="Хит" width="61" height="61" style="border-radius: 50%">
           <div class="cost">
             <span>380 &#8381;</span>/кг
           </div>          
           <figure class="catalog-item-photo">
-            <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
+            <img src="img/catalog-item-photo-2.jpg" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
           <p class="catalog-item-description">Сливочно-кофейное с кусочками шоколада</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
         <div class="catalog-item">
-          <img class="hit" src="http://placehold.it/61x61" alt="Хит" width="61px"; height="61px" style="border-radius: 50%;">
+          <img class="hit" src="img/hit.png" alt="Хит" width="61" height="61" style="border-radius: 50%">
           <div class="cost">
             <span>355 &#8381;</span>/кг
           </div>          
           <figure class="catalog-item-photo">
-            <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
+            <img src="img/catalog-item-photo-3.jpg" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
           <p class="catalog-item-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
         
         <div class="catalog-item">
-          <img class="hit" src="http://placehold.it/61x61" alt="Хит" width="61px"; height="61px" style="border-radius: 50%;">
+          <img class="hit" src="img/hit.png" alt="Хит" width="61" height="61" style="border-radius: 50%">
           <div class="cost">
             <span>415 &#8381;</span>/кг
           </div>          
           <figure class="catalog-item-photo">
-            <img src="http://placehold.it/267x267" alt="" width="267" height="267" style="border-radius: 50%">
+            <img src="img/catalog-item-photo-4.jpg" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
           <p class="catalog-item-description">Сливочное крем-брюле с карамельной подливкой</p>
           <a class="button" href="#">Быстрый просмотр</a>
@@ -201,7 +202,7 @@
       </div>
       <!-- Блок для коммуникации с магазином -->
       <div class="location">
-        <img src="http://placehold.it/1200x430" alt="" width="1200" height="430">
+        <img src="img/map-with-pin.jpg" alt="" width="1200" height="430">
         <!--<div class="location-pin">
           <img class="pin" src="" alt="" width="" height="">
         </div>-->
@@ -238,7 +239,7 @@
         <div class="page-footer-copyright">
           <div class="page-footer-logo">
             <a href="https://htmlacademy.ru/">
-              <img src="http://placehold.it/108x38" alt="HTML Academy" width="108" height="38">
+              <img src="img/footer-logo.svg" alt="HTML Academy" width="108" height="38">
             </a>
           </div>
           <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2016</p>
