@@ -1,3 +1,8 @@
+/* 
+  #849d8f - цвет 1-го фона
+  #8996a6 - цвет 2-го фона
+  #9d8b84 - цвет 3-го фона
+*/
 body {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
@@ -16,6 +21,12 @@ h2 {
   font-size: 35px;
   line-height: 41px;
 }
+
+.filters .filter-col {
+  display: inline-block;
+}
+
+
 
 /*.shopping-cart-box {
   background: #f8f7f4;
