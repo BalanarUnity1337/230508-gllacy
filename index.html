@@ -11,11 +11,11 @@
     ↓ Шапка ↓ -->
     <header class="page-header">
       <div class="container">
-        <div class="page-header-logo">
-          <img src="img/header-logo.svg" alt="" width="154" height="64">
-        </div>
         <nav class="page-header-navigation">
-          <ul>
+          <div class="page-header-logo">
+            <img src="img/header-logo.svg" alt="" width="154" height="64">
+          </div>
+          <ul class="navigation-list">
             <li>
               <a href="#">Каталог</a>
               
@@ -71,34 +71,6 @@
         </div>
         <!-- Слайдер -->
         <div class="slider">
-          <div class="slider-inner">
-            <div class="slider-slides">
-              <div class="slider-slide-1">
-                <div class="promo-photo">
-                  <!-- Картинка -->
-                </div>
-                <div class="promo-text">
-                  <p>Крем-брюле и пломбир с малиновым джемом</p>
-                </div>
-              </div>
-              <div class="slider-slide-2">
-                <div class="promo-photo">
-                  <!-- Картинка -->
-                </div>
-                <div class="promo-text">
-                  <p>Шоколадный пломбир и лимонный сорбет</p>
-                </div>
-              </div>
-              <div class="slider-slide-3">
-                <div class="promo-photo">
-                  <!-- Картинка -->
-                </div>
-                <div class="promo-text">
-                  <p>Пломбир с помадкой и клубничный щербет</p>
-                </div>
-              </div>
-            </div>
-          </div>
           <input type="radio" name="switch" id="radio-1">
           <input type="radio" name="switch" id="radio-2">
           <input type="radio" name="switch" id="radio-3">
@@ -106,6 +78,37 @@
             <label for="radio-1"></label>
             <label for="radio-2"></label>
             <label for="radio-3"></label>
+          </div>
+          <div class="slider-inner">
+            <div class="slider-slides">
+              <div class="slider-slide">
+                <div class="promo-photo">
+                  <!-- Картинка -->
+                  <img src="img/promo-photo-1.png" alt="" width="647" height="584">
+                </div>
+                <div class="promo-text">
+                  <p>Крем-брюле и пломбир с малиновым джемом</p>
+                </div>
+              </div>
+              <div class="slider-slide">
+                <div class="promo-photo">
+                  <!-- Картинка -->
+                  <img src="img/promo-photo-2.png" alt="" width="644" height="582">
+                </div>
+                <div class="promo-text">
+                  <p>Шоколадный пломбир и лимонный сорбет</p>
+                </div>
+              </div>
+              <div class="slider-slide">
+                <div class="promo-photo">
+                  <!-- Картинка -->
+                  <img src="img/promo-photo-3.png" alt="" width="639" height="582">
+                </div>
+                <div class="promo-text">
+                  <p>Пломбир с помадкой и клубничный щербет</p>
+                </div>
+              </div>
+            </div>
           </div>
           <a class="button" href="#">Давайте оба!</a> <!-- Кнопка везде одинаковая -->
         </div>
@@ -134,7 +137,7 @@
             <span>310 &#8381;</span>/кг
           </div>
           <figure class="catalog-item-photo">
-            <img src="img/catalog-item-photo-1.jpg" alt="" width="267" height="267" style="border-radius: 50%">
+            <img src="img/catalog-item-photo-1.png" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
           <p class="catalog-item-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <a class="button" href="#">Быстрый просмотр</a>
@@ -146,7 +149,7 @@
             <span>380 &#8381;</span>/кг
           </div>          
           <figure class="catalog-item-photo">
-            <img src="img/catalog-item-photo-2.jpg" alt="" width="267" height="267" style="border-radius: 50%">
+            <img src="img/catalog-item-photo-2.png" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
           <p class="catalog-item-description">Сливочно-кофейное с кусочками шоколада</p>
           <a class="button" href="#">Быстрый просмотр</a>
@@ -158,7 +161,7 @@
             <span>355 &#8381;</span>/кг
           </div>          
           <figure class="catalog-item-photo">
-            <img src="img/catalog-item-photo-3.jpg" alt="" width="267" height="267" style="border-radius: 50%">
+            <img src="img/catalog-item-photo-3.png" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
           <p class="catalog-item-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
           <a class="button" href="#">Быстрый просмотр</a>
@@ -170,7 +173,7 @@
             <span>415 &#8381;</span>/кг
           </div>          
           <figure class="catalog-item-photo">
-            <img src="img/catalog-item-photo-4.jpg" alt="" width="267" height="267" style="border-radius: 50%">
+            <img src="img/catalog-item-photo-4.png" alt="" width="267" height="267" style="border-radius: 50%">
           </figure>
           <p class="catalog-item-description">Сливочное крем-брюле с карамельной подливкой</p>
           <a class="button" href="#">Быстрый просмотр</a>
@@ -179,10 +182,14 @@
       <!-- Блок описания и достоинств данного магазина -->
       <div class="dignity">
         <p class="dignity-title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-        <p class="dignity-description">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        <p class="dignity-description">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        <p class="dignity-description">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p class="dignity-description">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <div class="dignity-left">
+          <p class="dignity-description">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <p class="dignity-description">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </div>
+        <div class="dignity-right">
+          <p class="dignity-description">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p class="dignity-description">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </div>
       </div>
       <!-- Блок для новостей и подписки -->
       <div class="content">
@@ -191,13 +198,11 @@
           <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </div>
         <div class="content-right">
-          <div class="content-right-inner">
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-            <form class="subscribe" action="https://echo.htmlacademy.ru" method="post">
-              <input type="email" name="email-subscribe" placeholder="Электронная почта">
-              <button class="button" type="submit">Отправить</button>
-            </form>
-          </div>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+          <form class="subscribe" action="https://echo.htmlacademy.ru" method="post">
+            <input type="email" name="email-subscribe" placeholder="Электронная почта">
+            <button class="button" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
       <!-- Блок для коммуникации с магазином -->
@@ -246,5 +251,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>

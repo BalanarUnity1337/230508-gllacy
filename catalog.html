@@ -11,13 +11,13 @@
     ↓ Шапка ↓ -->
     <header class="page-header">
       <div class="container">
-        <div class="page-header-logo">
-          <a href="index.html" title="Магазин «Глэйси»">
-            <img src="img/header-logo.svg" alt="" width="154" height="64">
-          </a>
-        </div>
         <nav class="page-header-navigation">
-          <ul>
+          <div class="page-header-logo">
+            <a href="index.html" title="Магазин «Глэйси»">
+              <img src="img/header-logo.svg" alt="" width="154" height="64">
+            </a>
+          </div>
+          <ul class="navigation-list">
             <li>
               <a href="#">Каталог</a>
               
@@ -94,15 +94,20 @@
           <span class="info-time">С 10 до 20, ежедневно</span>
           <a class="info-phone" href="tel:8 812 450-25-25">8 812 450-25-25</a>
         </div>
+        <div class="breadcrumbs">
+          <a href="index.html">Главная</a>
+          <a href="#">Каталог</a>
+          <a class="current" href="#">Сливочное</a>
+        </div>
       </div>
     </header>
     <!-- Основное содержание -->
     <main class="container">
-      <div class="breadcrumbs">
+      <!--<div class="breadcrumbs">
         <a href="index.html">Главная</a>
         <a href="#">Каталог</a>
         <a class="current" href="#">Сливочное</a>
-      </div>
+      </div>-->
       <h1 class="page-title">Сливочное мороженое</h1>
       <!-- Блок фильтров -->
       <div class="filters">
@@ -166,7 +171,9 @@
               </div>
             </div>            
           </div>
-          <button class="apply" type="submit">Применить</button>
+          <div class="apply">
+            <button class="button" type="submit">Применить</button>
+          </div>
         </form>
       </div>
       <!-- Содержание каталога -->
@@ -302,6 +309,7 @@
           <p class="catalog-item-description">Сливочное с мятным сиропом</p>
           <a class="button" href="#">Быстрый просмотр</a>
         </div>
+        
         <div class="catalog-pagination">
           <a class="previous" href="#">&lt;</a>
           <a class="current" href="#">1</a>
