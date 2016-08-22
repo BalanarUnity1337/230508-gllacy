@@ -377,6 +377,10 @@ h2 {
   line-height: 24px;
 }
 
+.search-box button {
+  display: none;
+}
+
 .button-light.button-login {
   position: relative;
   width: 92px;
