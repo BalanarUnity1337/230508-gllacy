@@ -26,14 +26,6 @@ body {
   line-height: 22px;
   font-weight: 700;
   color: #ffffff;
-/*
-  background: url("../img/bg-1.png") no-repeat 50% 8px;
-  background-size: 1200px auto;
-*/
-/*
-  background: url("../img/bg-2.png") no-repeat 50% 8px;
-  background-size: 1200px auto;
-*/
 }
 
 h1 {
@@ -50,7 +42,6 @@ h2 {
   box-sizing: border-box;
   display: table;
   width: 100%;
-  padding: 8px 8px 0;
   margin: 0 auto;
   background-color: #849d8f;
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), transparent 656px);
@@ -100,20 +91,11 @@ h2 {
 
 .page-header {
   padding-top: 23px;
-  
-/*  background: rgba(190, 255, 5, 0.4);*/
-}
-
-.page-header .container {
-/*  background: rgba(255, 207, 5, 0.4);*/
 }
 
 .page-header-navigation {
   float: left;
   width: 560px;
-/*  width: 853px;*/
-  
-/*  background: rgba(255, 144, 5, 0.4);*/
 }
 
 .page-header-user {
@@ -124,8 +106,6 @@ h2 {
   min-height: 50px;
   font-size: 0;
   text-align: right;
-  
-/*  background: rgba(255, 144, 5, 0.4);*/
 }
 
 .navigation-list {
@@ -142,7 +122,6 @@ h2 {
   list-style: none;
   position: relative;
   z-index: 1;
-/*  background: rgba(255, 93, 5, 0.4);*/
 }
 
 .navigation-list ul {
@@ -1547,16 +1526,21 @@ input[type="radio"]:disabled + label::after {
 
 .location {
   position: relative;
-  width: 1200px;
+  width: 100%;
   min-height: 429px;
   margin-left: -27px; 
+  line-height: 0;
+}
+
+.location iframe {
+  background: url("../img/map.jpg") no-repeat;
 }
 
 .location-communication {
   box-sizing: border-box;
   position: absolute;
   top: 62px;
-  right: 27px;
+  right: -27px;
   width: 302px;  
   min-height: 305px;
   padding: 29px 25px;  
