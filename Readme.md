@@ -2,6 +2,7 @@
 
 * Студент: [Иван Елизенцев](https://up.htmlacademy.ru/htmlcss/14/user/230508).
 * Наставник: [Альбина Токарчук](https://up.htmlacademy.ru/htmlcss/14/user/167491).
+* [Demo](https://balanarunity1337.github.io/230508-mishka/)
 
 ---
 
